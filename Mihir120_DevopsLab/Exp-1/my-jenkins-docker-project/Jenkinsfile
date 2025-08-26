@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/mihirhebalkar/DevOpsLab3.git'
+                git branch: 'mihir', git 'https://github.com/mihirhebalkar/DevOpsLab3.git'
             }
         }
         stage('Build Docker Image') {
